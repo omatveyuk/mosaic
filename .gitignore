@@ -1,0 +1,6 @@
+*.pyc
+.DS_Store
+angular-seed-master/
+node_modules/
+bower_components/
+LICENSE
