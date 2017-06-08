@@ -5,11 +5,11 @@ angular.
   module('gallery').
   component('gallery', {
     templateUrl: 'gallery/gallery.template.html',
-    controller: function GalleryController($http) {
-      var self = this;
+    controller: function GalleryController($http, $scope) {
 
       $http.get('gallery/boardTemplates/boardTemplates.json').then(function(response) {
-        self.boardTemplates = response.data;
+        $scope.boardTemplates = response.data;
+        console.log($scope.boardTemplates);
       });
     }
   });

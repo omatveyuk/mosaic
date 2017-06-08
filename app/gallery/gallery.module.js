@@ -1,2 +1,2 @@
 'use strict';
-angular.module('gallery', []);
+var gallery = angular.module('gallery', []);

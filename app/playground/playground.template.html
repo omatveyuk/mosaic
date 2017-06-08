@@ -5,39 +5,18 @@
     <button type="button" class="btn btn-success btn-block btn-responsive text-break" id="clear" ng-click="$ctrl.clearBoard()">Clear<span class="hidden-sm hidden-xs"> board</span></button>
   </div>
   <div class="col-xs-2"> 
-    <button type="button" class="btn btn-warning btn-block btn-responsive text-break" id="save" ng-click="">Save<span class="hidden-sm hidden-xs"> the board</span></button>
+    <button type="button" class="btn btn-warning btn-block btn-responsive text-break" id="save" ng-click="$ctrl.saveBoard()">Save<span class="hidden-sm hidden-xs"> the board</span></button>
   </div>
 </div>
 
 <div class="row">
-
-  <div class="col-xs-5"> </div>
+  <div class="col-xs-6"> </div>
   
-  <div class="col-xs-7" id="playground">
+  <div class="col-xs-6" id="playground" align="center">
     <div ng-repeat="r in range track by $index" ng-init="rowIndex = $index">
       <span ng-repeat="c in range track by $index" ng-init="colIndex = $index" class="board-tile" style="background-color:{{board[rowIndex][colIndex]}}" ng-click="$ctrl.setColor(shared.codeColor, rowIndex, colIndex)"> </span>
     </div>
   </div>
-
 </div>
 
-
-
-
-
-<!-- <div class="row">
-  <div class="col-xs-4 top"><span>Current color:</span><span class="pallete-tile" style="background-color:{{shared.codeColor}}; margin-top: 0px"> </span></div>
-  <div class="col-xs-4"> 
-    <button type="button" class="btn btn-success btn-block btn-responsive text-break" id="clear" ng-click="$ctrl.clearBoard()">Clear<span class="hidden-sm hidden-xs"> board</span></button>
-  </div>
-  <div class="col-xs-4"> 
-    <button type="button" class="btn btn-warning btn-block btn-responsive text-break" id="save" ng-click="">Save<span class="hidden-sm hidden-xs"> the board</span></button>
-  </div>
-</div>
-
-<div id="playground">
-    <div ng-repeat="r in range track by $index" ng-init="rowIndex = $index">
-      <span ng-repeat="c in range track by $index" ng-init="colIndex = $index" class="board-tile" style="background-color:{{board[rowIndex][colIndex]}}" ng-click="$ctrl.setColor(shared.codeColor, rowIndex, colIndex)"> </span>
-    </div>
-</div> -->
 

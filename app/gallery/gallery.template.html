@@ -7,11 +7,11 @@
   <span style="color:#0000ff">R</span>
   <span style="color:#ffa500">Y</span>
 </div>
-<div class="row">
-  <div id="g-info" align="center">Click on a board to choose</div>
-  <div>
-    <span ng-repeat="template in $gallery.boardTemplates">
-      <img ng-src="{{template.picture}}" alt="{{template.name}}" />
-    </span>
-  </div>
+<div class="row" id="g-info" align="center">Click on a board to choose</div>
+<!-- <div class= "row"> -->
+<div>
+  <span class="col-xs-2" ng-repeat="template in boardTemplates">
+    <img class="g-item img-thumbnail img-responsive" ng-src="{{template.picture}}" alt="{{template.name}}" />
+  </span>
+</div>
 </div>

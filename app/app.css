@@ -75,18 +75,20 @@
 
 /*.img-board {
   margin: 20px 20px 20px 20px;
-}
+} */
 
 .g-item {
   display: inline-block;
-}
+  border: 1px solid #808080;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #808080;
+} 
 
-change color of image on mouse over and mouse out
+/*change color of image on mouse over and mouse out*/
 .g-item:hover {
-  background-color: #ffdb4d !important;
-  border: 1px solid #ffa500;
+  box-shadow: 0 0 20px #000000;
   cursor: pointer;
-}*/
+}
 
 /*@media (max-width: 768px) {
   .title {
