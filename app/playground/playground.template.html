@@ -9,14 +9,21 @@
   </div>
 </div>
 
-<div class="row">
-  <div class="col-xs-6"> </div>
+<div class="row" align="center">
+  <div class="playground">
+    <div ng-repeat="r in range track by $index" ng-init="rowIndex = $index">
+      <span ng-repeat="c in range track by $index" ng-init="colIndex = $index" class="board-tile" style="background-color:{{sharedTemplate.boardTemplate.board[rowIndex][colIndex]}}"> </span>
+    </div>
+  </div>
   
-  <div class="col-xs-6" id="playground" align="center">
+  <div class="playground">
     <div ng-repeat="r in range track by $index" ng-init="rowIndex = $index">
       <span ng-repeat="c in range track by $index" ng-init="colIndex = $index" class="board-tile" style="background-color:{{board[rowIndex][colIndex]}}" ng-click="$ctrl.setColor(shared.codeColor, rowIndex, colIndex)"> </span>
     </div>
   </div>
 </div>
+
+<!--     <img class="img-thumbnail img-responsive" ng-src="{{sharedTemplate.boardTemplate.picture}}" alt="{{sharedTemplate.boardTemplate.name}}"/> -->
+
 
 

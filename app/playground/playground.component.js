@@ -4,9 +4,11 @@ angular.
   module('playground').
   component('playground', {
     templateUrl: 'playground/playground.template.html',
-    controller: function PlaygroundController($scope, palleteService) {
+    controller: function PlaygroundController($scope, palleteService, galleryService) {
       var self = this;
       $scope.shared = palleteService;
+      $scope.sharedTemplate = galleryService;
+      console.log($scope.sharedTemplate);
       
       $scope.range = [];
       for(var i = 0;i < 20; i++) {
@@ -38,17 +40,17 @@ angular.
       };
 
       self.saveBoard = function saveBoard() {
-        console.log($scope.board);
-        var b = '[';
-        for (var i = 0; i < 20; i++) {
-          b += '[';
-          for (var j =0; j < 20; j++) {
-            b += '"'+$scope.board[i][j]+'",';
-          }
-          b += '],';
-        }
-        b += ']';
-        console.log(b);
+        // console.log($scope.board);
+        // var b = '[';
+        // for (var i = 0; i < 20; i++) {
+        //   b += '[';
+        //   for (var j =0; j < 20; j++) {
+        //     b += '"'+$scope.board[i][j]+'",';
+        //   }
+        //   b += '],';
+        // }
+        // b += ']';
+        // console.log(b);
       };
     }
 
