@@ -1,0 +1,4 @@
+<p>Choose color:</p>
+<div id="pallete">
+      <span ng-repeat="color in $ctrl.colors" class="pallete-tile" style="background-color:{{color.code}}" ng-click="$ctrl.setColor(color.code)"> </span>
+</div>

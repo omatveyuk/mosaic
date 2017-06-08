@@ -1,0 +1,17 @@
+<div class="row title" id="t-gallery">
+  <span style="color:#ffa500">G</span>
+  <span style="color:#ffdb4d">A</span>
+  <span style="color:#0000ff">L</span>
+  <span style="color:#227722">L</span>
+  <span style="color:#ffdb4d">E</span> 
+  <span style="color:#0000ff">R</span>
+  <span style="color:#ffa500">Y</span>
+</div>
+<div class="row">
+  <div id="g-info" align="center">Click on a board to choose</div>
+  <div>
+    <span ng-repeat="template in $gallery.boardTemplates">
+      <img ng-src="{{template.picture}}" alt="{{template.name}}" />
+    </span>
+  </div>
+</div>
