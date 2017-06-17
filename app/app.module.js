@@ -1,9 +1,12 @@
 'use strict';
 
-angular.module('mosaicApp',
+var mosaicApp = angular.module('mosaicApp',
 [
+  'ngRoute',
   'pallete',
   'playground',
   'gallery'
 ]);
+
+
 

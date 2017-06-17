@@ -9,9 +9,9 @@
 </div>
 <div class="row" id="g-info" align="center">Click on a board to choose</div>
 <!-- <div class= "row"> -->
-<div>
-  <span class="col-xs-2" ng-repeat="template in boardTemplates" ng-click="$ctrl.setBoardTemplate(template)">
-    <img class="g-item img-thumbnail img-responsive" ng-src="{{template.picture}}" alt="{{template.name}}" />
+<div class="row" align="center">
+  <span ng-repeat="template in boardTemplates" ng-click="$ctrl.setBoardTemplate(template)">
+    <img class="img-thumbnail img-responsive g-item" ng-src="{{template.picture}}" alt="{{template.name}}" />
   </span>
 </div>
 </div>

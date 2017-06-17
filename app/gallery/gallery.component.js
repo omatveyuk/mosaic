@@ -5,7 +5,7 @@ angular.
   module('gallery').
   component('gallery', {
     templateUrl: 'gallery/gallery.template.html',
-    controller: function GalleryController($http, $scope, galleryService) {
+    controller: function GalleryController($http, $scope, $window, galleryService) {
       var self = this;
 
       $http.get('gallery/boardTemplates/boardTemplates.json').then(function(response) {
@@ -14,9 +14,12 @@ angular.
         console.log($scope.boardTemplates);
       });
 
-      self.setBoardTemplate = function setColor(boardTemplate) {
+      self.setBoardTemplate = function setBoard(boardTemplate) {
           self.boardTemplate = boardTemplate;
           galleryService.boardTemplate = boardTemplate;
+          // $window.scrollTo(0, 0);
+          $window.scrollTo(0, angular.element('pallete').offset().top); 
+
  
       };
     }

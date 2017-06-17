@@ -40,17 +40,17 @@ angular.
       };
 
       self.saveBoard = function saveBoard() {
-        // console.log($scope.board);
-        // var b = '[';
-        // for (var i = 0; i < 20; i++) {
-        //   b += '[';
-        //   for (var j =0; j < 20; j++) {
-        //     b += '"'+$scope.board[i][j]+'",';
-        //   }
-        //   b += '],';
-        // }
-        // b += ']';
-        // console.log(b);
+        console.log($scope.board);
+        var b = '[';
+        for (var i = 0; i < 20; i++) {
+          b += '[';
+          for (var j =0; j < 20; j++) {
+            b += '"'+$scope.board[i][j]+'",';
+          }
+          b += '],';
+        }
+        b += ']';
+        console.log(b);
       };
     }
 
