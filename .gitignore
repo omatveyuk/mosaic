@@ -1,5 +1,6 @@
 *.pyc
 .DS_Store
+*.log
 angular-seed-master/
 node_modules/
 bower_components/

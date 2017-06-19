@@ -10,6 +10,10 @@
   margin: 0px 20px 0px 20px;
 }
 
+hr {
+  border: 3px solid #808080;
+}
+
 .title {
   font-family: 'Chango', cursive;
   text-align: center;
