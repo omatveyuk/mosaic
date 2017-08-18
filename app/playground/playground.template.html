@@ -11,13 +11,13 @@
 
 <div class="row" align="center">
   <div class="playground">
-    <div ng-repeat="r in range track by $index" ng-init="rowIndex = $index">
+    <div class="row-playground" ng-repeat="r in range track by $index" ng-init="rowIndex = $index">
       <span ng-repeat="c in range track by $index" ng-init="colIndex = $index" class="board-tile" style="background-color:{{sharedTemplate.boardTemplate.board[rowIndex][colIndex]}}"> </span>
     </div>
   </div>
   
   <div class="playground">
-    <div ng-repeat="r in range track by $index" ng-init="rowIndex = $index">
+    <div class="row-playground" ng-repeat="r in range track by $index" ng-init="rowIndex = $index">
       <span ng-repeat="c in range track by $index" ng-init="colIndex = $index" class="board-tile" style="background-color:{{board[rowIndex][colIndex]}}" ng-click="$ctrl.setColor(shared.codeColor, rowIndex, colIndex)"> </span>
     </div>
   </div>
